@@ -40,8 +40,12 @@ header {
 h1{
     font-family: "Finlandica Headline", sans-serif;
     text-align: center;
-    color: aliceblue;
+    color: rgb(221, 232, 241);
     text-transform: uppercase;
+}
+
+h2{
+    color: rgb(44, 45, 46);
 }
 
 main{
@@ -82,7 +86,7 @@ hr{
 }
 
 address {
-    color: aliceblue;
+    color: rgb(221, 232, 241);
     margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 44px;
