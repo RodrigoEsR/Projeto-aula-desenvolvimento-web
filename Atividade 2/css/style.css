@@ -1,0 +1,119 @@
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.finlandica-headline{
+  font-family: "Finlandica Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: none;
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(219, 225, 231);
+    border-radius: 10px;
+    margin-bottom: auto;
+}
+
+header {
+    border: none;
+    background-color: rgb(53, 83, 148);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+h1{
+    font-family: "Finlandica Headline", sans-serif;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+footer{
+    border: none;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(53, 83, 148);
+}
+
+article{
+    background-color: aliceblue;
+    max-width: 100%;
+    padding: 50px;
+}
+
+p {
+    margin: 2%;
+}
+
+ul,ol {
+    margin: 1% 5% 20px 4%;
+}
+
+hr{
+   border: none;               
+    height: 1px;               
+    background-color: #000;    
+    width: 90%;                 
+    margin: 40px auto;   
+}
+
+address {
+    color: aliceblue;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 44px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: dashed;
+}
+
+a:hover{
+    color: black;
+}
+
+#voltaIncio {
+    margin-left: 110px;
+    text-align: right;
+}
+#linkImagemMoto{
+    color: black;
+    margin: auto;
+}
+#linkImagemMoto:hover {
+    color: blue;
+}
+
+.menu {
+    border-radius: 30px;
+    background-color: rgb(27, 49, 97);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px; 
+}   
