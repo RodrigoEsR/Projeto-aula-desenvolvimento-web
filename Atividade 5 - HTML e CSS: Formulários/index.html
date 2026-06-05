@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Inscrição Faculdade</title>
+    <style>
+        .oswald {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .finlandica-headline{
+        font-family: "Finlandica Headline", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #121212;
+        }
+        
+        h1{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Finlandica Headline", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: center;
+            background-color: #ee6b00;
+            width: 50%;
+            margin: 30px auto 0;
+            border-radius: 20px;
+        }
+
+        form{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            width: 100%;
+            max-width: 780px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        legend {
+            padding: 3px;
+            
+        }
+
+        fieldset{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;      
+            gap: 20px;            
+            padding: 20px;
+            border: 1px solid #ee6b00;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        label{
+            padding-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"]{
+            width: auto;
+            margin-left: 10px;
+        }
+
+        input[type="file"]{
+            display: flex;
+            width: 50%;
+        }
+
+        input[type="submit"]{
+            width: auto;
+        }
+
+        input[type="button"]{
+            width: auto;
+        }
+
+        textarea {
+            min-height: 150px;
+            font-size: 15px;
+            resize: vertical;
+        }
+
+        .gender {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 5px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            flex-direction: row;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .opcoes-checkbox {
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+        }
+
+
+        .opcoes-checkbox label {
+            padding-bottom: 0;
+            cursor: pointer;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            border:1px solid lightgreen;
+        }
+
+        fieldset, input {
+            background-color: #1e1e1e;
+            border-color: #333333;
+            color: #e0e0e0;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #1e1e1e;
+            border-color: #333333;
+            border: 1px solid #cccccc;
+            color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input:focus {
+        border: 2px solid rgb(80, 198, 245);
+        }
+
+        #submit:hover{
+            background-color: green;
+        }
+
+        #clear:hover{
+            background-color: rgb(99, 5, 5);
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="titulo">
+        <h1>Formulário de inscrição para faculdade</h1>
+        </div>
+    </header>
+    <main>
+        <form action="" autocomplete="on">
+            <fieldset class="#bloco-coluna">
+                <legend>Dados pessoais</legend>
+
+                <div>
+                <label for="name">Nome completo</label>
+                <input id="name" name="userName" type="text" required>
+                </div>
+
+                <div>
+                <label for="cellphone">Telefone</label>
+                <input id="cellphone" name="userCellphone" type="text" pattern="[0-9]{13}" placeholder="Insira seu numero de telefone">
+                </div>
+
+                <div>
+                <label for="birthdate">Data de nascimento</label>
+                <input id="birthdate" name="userBirthdate" type="date" required>
+                </div>
+
+                <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="userEmail" id="email" required>
+                </div>
+
+                <div>
+                <label for="password">Senha</label>
+                <input type="password" name="userPassword" id="password" required>
+                </div>
+
+                <div class="gender">
+                    <p>Genêro:</p>
+                    <div class="opcoes">
+                        <input type="radio" id="fem" name="userGender">
+                        <label for="fem">Feminino</label>
+
+                        <input type="radio" id="masc" name="userGender">
+                        <label for="masc">Masculino</label>
+
+                        <input type="radio" id="notInformed" name="userGender">
+                        <label for="notInformed">Prefiro não informar</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Curso</legend>
+                <div>
+                    <label for="music">Selecione seu curso</label>
+                    <select name="musicUser" id="music">
+                    <option value="software_enginnering">Engenharia de Software</option>
+                    <option value="computer_cience">Ciência da Computação</option>
+                    <option value="system_analyst">Analise de sistemas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="studentIDImage">Foto da carteira de estudante</label>
+                    <input type="file" id="studentIDImage" name="userStudentID">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses</legend>
+
+                <p>Qual das matérias a baixo te interessa mais?</p>
+
+                <div class="opcoes-checkbox">
+                    <input type="checkbox" name="userExactSciences" id="exactSciences">
+                    <label for="exactSciences">Gosto de Fisica, Robótica e partes que envolvam mais ciências exatas</label>
+                </div>
+
+                <div class="opcoes-checkbox">
+                    <input type="checkbox" name="userHumanitiesSocial" id="humanitiesSocial">
+                    <label for="humanitiesSocial">Gosto de pensar na experiência do usuário, UI/UX e que envolvam ciências sociais</label>
+                </div>
+
+                <div class="opcoes-checkbox">
+                    <input type="checkbox" name="userNotChose" id="notCHose">
+                    <label for="notCHose">Gosto de ambas</label>
+                </div>
+
+                <div>
+                    <label for="coment">Fale sobre você!</label>
+                    <textarea id="coment" name="userComent" placeholder="Fale sobre você..."> </textarea>
+                </div>
+            </fieldset>
+
+            <button id="submit" type="submit">Enviar</button>
+            <button id="clear" type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>
