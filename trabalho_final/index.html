@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="images/icon-roteador.webp">
+
+    <link rel="" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <button id="botao-tema" aria-label="Alternar modo de cor">
+            <img id="icone-tema" src="images/icon_modo_escuro_e_claro.svg" alt="Ícone Modo de Cor" />
+            <span id="texto-botao">Modo claro</span>
+        </button>
+        <h1>Portfólio</h1>
+        <div>
+            <nav class="nav_bar">
+                <a href="projetos.html">Projetos</a>
+
+                <a href="index.html">Inicio</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="card apresentacao">
+            <img src="images/Foto_de_perfil.png" alt="Foto de Rodrigo" />
+            <h2>Rodrigo Eschiavon Rojas</h2>
+            <p>
+                Sou um estudante de Engenharia de Software com futura especialização
+                em Cybersegurança, venha me conhecer!
+            </p>
+        </div>
+
+        
+        <div class="card tecnologias">
+            <h3>Principais tecnologias:</h3>
+
+            <div class="carrossel-container">
+                <button class="seta anterior">&#10094;</button>
+
+                <div class="carrossel-slides">
+                    <div class="slide ativo">
+                        <img class="logo-tech" src="images/logo-java.png" alt="Java" class="logo-tech" />
+                        <h4>Java</h4>
+                    </div>
+                    <div class="slide">
+                        <img src="images/logo-js.png" alt="JavaScript" class="logo-tech" />
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="slide">
+                        <img class="logo-tech" src="images/logo-html.png" alt="HTML" class="logo-tech" />
+                        <h4>HTML 5</h4>
+                    </div>
+                    <div class="slide">
+                        <img class="logo-tech" src="images/logo-css.png" alt="CSS" class="logo-tech" />
+                        <h4>CSS 3</h4>
+                    </div>
+                </div>
+
+                <button class="seta proximo">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="card certificacoes">
+            <h3>Certificações</h3>
+
+            <div class="esteira-container">
+                <div class="esteira-track">
+                    <div class="esteira-item">
+                        <img src="images/logo-redhat.png" alt="Red Hat" class="logo-certificado" />
+                        <span>Red Hat Training: Getting Started with Linux Fundamentals
+                            (RH104 - RHA) - Ver. 9.1</span>
+                    </div>
+
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: HTML e CSS</span>
+                    </div>
+
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: Trilha Redes de computadores</span>
+                    </div>
+
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: Cibersegurança: Fundamentos e práticas integradas</span>
+                    </div>
+
+                    <div class="esteira-item">
+                        <img src="images/logo-redhat.png" alt="Red Hat" class="logo-certificado" />
+                        <span>Red Hat Training: Getting Started with Linux Fundamentals
+                            (RH104 - RHA) - Ver. 9.1</span>
+                    </div>
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: HTML e CSS</span>
+                    </div>
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: Trilha Redes de computadores</span>
+                    </div>
+                    <div class="esteira-item">
+                        <img src="images/logo-alura.png" alt="Alura" class="logo-certificado" />
+                        <span>Alura: Cibersegurança: Fundamentos e práticas integradas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card projetos">
+            <h3>Alguns projetos que você irá conhecer</h3>
+            <ul class="lista_projetos">
+                <li>Techboard - projeto de estudo de HTML e CSS</li>
+                <li>Culturama - projeto de estudo de boas práticas em HTML e CSS</li>
+                <li>
+                    Networking-study - projeto de estudo sobre redes e a criação de uma
+                    intranet
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="card enderecos">
+            <h3>Visite meus perfis também!</h3>
+            <address>
+                <div>
+                    <img src="images/logo-linkedin.png" alt="Logo do Linkedin">
+                    <a href="https://www.linkedin.com/in/rodrigoesr-sec/" target="_blank">Linkedin</a>
+                </div>
+                <div>
+                    <img id="logo-github" src="images/logo-github-branco.webp" alt="Logo do Github">
+                    <a href="https://github.com/RodrigoEsR" target="_blank">Github</a>
+                </div>
+                <div>
+                    <img src="images/logo-gmail.webp" alt="Logo do Gmail">
+                    <a href="mailto:rodrigoeschiacontact@gmail.com">rodrigoeschiacontact@gmail.com</a>
+                </div>
+            </address>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

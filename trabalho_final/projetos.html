@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon-roteador.webp">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <title>Projetos</title>
+</head>
+
+<body>
+    <header>
+        <button id="botao-tema" aria-label="Alternar modo de cor">
+            <img id="icone-tema" src="images/icon_modo_escuro_e_claro.svg" alt="Ícone Modo de Cor" />
+            <span id="texto-botao">Modo claro</span>
+        </button>
+        <h1>Projetos</h1>
+        <nav class="nav_bar">
+            <a href="index.html">Inicio</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card projetos-carousel">
+            <h3>Meus projetos</h3>
+
+            <div class="carrossel-container">
+                <button class="seta anterior" aria-label="Projeto anterior">&#10094;</button>
+
+                <div class="carrossel-slides" id="projects-track">
+                    <article class="slide ativo project-slide">
+                        <img class="project-image" src="images/projeto-culturama.jpeg" alt="Pesquisa Culturama">
+                        <h4>Pesquisa Culturama</h4>
+                        <p>Neste projeto desenvolvi um formulário em HTML e CSS focado em acessibilidade e validações.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://rodrigoesr.github.io/Pesquisa-Culturama/" target="_blank">Ver site</a>
+                            <a href="https://github.com/RodrigoEsR/Pesquisa-Culturama" target="_blank">Repositório</a>
+                        </div>
+                    </article>
+
+                    <article class="slide project-slide">
+                        <img class="project-image" src="images/projeto-techboard.jpeg" alt="Techboard">
+                        <h4>Techboard</h4>
+                        <p>Projeto de estudo de HTML e CSS; implementação fiel ao protótipo e boas práticas.</p>
+                        <div class="project-links">
+                            <a href="https://rodrigoesr.github.io/Estudo-sobre-html-css/techboard/" target="_blank">Ver
+                                site</a>
+                            <a href="https://github.com/RodrigoEsR/Estudo-sobre-html-css"
+                                target="_blank">Repositório</a>
+                        </div>
+                    </article>
+
+                    <article class="slide project-slide">
+                        <img class="project-image" src="images/projeto-network.jpeg" alt="Networking-study">
+                        <h4>Networking-study</h4>
+                        <p>Simulação de rede empresarial: DNS, TCP/IP, regras de acesso e documentação técnica.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/RodrigoEsR/Networking-study" target="_blank">Repositório</a>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="seta proximo" aria-label="Próximo projeto">&#10095;</button>
+            </div>
+            <div class="dots" id="project-dots" aria-hidden="false"></div>
+        </section>
+
+        <section class="card">
+            <h3>Mais projetos</h3>
+            <p>Venha conferir outros projetos no meu perfil do GitHub.</p>
+            <a class="github" href="https://github.com/RodrigoEsR" target="_blank">
+                <img class="github-icon" id="github-empresa" src="images/logo-github-branco.webp" alt="Logo do Github">
+                Github
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="card enderecos">
+            <h3>Visite meus perfis também!</h3>
+            <address>
+                <div>
+                    <img src="images/logo-linkedin.png" alt="Logo do Linkedin">
+                    <a href="https://www.linkedin.com/in/rodrigoesr-sec/" target="_blank">Linkedin</a>
+                </div>
+                <div>
+                    <img src="images/logo-gmail.webp" alt="Logo do Gmail">
+                    <a href="mailto:rodrigoeschiacontact@gmail.com">rodrigoeschiacontact@gmail.com</a>
+                </div>
+            </address>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

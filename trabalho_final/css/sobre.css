@@ -1,0 +1,23 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--texto-principal);
+}
+
+.card h2 {
+    font-size: 28px;
+    color: var(--destaque);
+}
+
+@media (min-width: 900px) {
+	main {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+	}
+	.card { width: calc(50% - 24px); }
+}
