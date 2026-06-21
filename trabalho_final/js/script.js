@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // ==========================================
+    // 1. LÓGICA DO CARROSSEL DE TECNOLOGIAS
+    // ==========================================
     const slides = document.querySelectorAll(".slide");
     const btnAnterior = document.querySelector(".seta.anterior");
     const btnProximo = document.querySelector(".seta.proximo");
@@ -25,17 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (slides.length > 0) { mostrarSlide(slideAtual); iniciarAutoplay(); }
 
+    // ==========================================
+    // 2. LÓGICA MODULAR DE TROCA DE TEMA + LOGO GITHUB
+    // ==========================================
     const botaoTema = document.getElementById("botao-tema");
     const textoBotao = document.getElementById("texto-botao");
-    const logoGithub = document.getElementById("logo-github"); 
-    const githubEmpresa = document.getElementById("github-empresa"); 
+    const logoGithub = document.getElementById("logo-github");
 
     function atualizarLogoGithub(isLight) {
-        if (logoGithub) {
-            logoGithub.src = isLight ? "images/logo-github-preto.png" : "images/logo-github-branco.webp";
-        }
-        if (githubEmpresa) {
-            githubEmpresa.src = isLight ? "images/logo-github-preto.png" : "images/logo-github-branco.webp";
+        if (!logoGithub) return;
+        if (isLight) {
+            logoGithub.src = "images/logo-github-preto.webp"; 
+        } else {
+            logoGithub.src = "images/logo-github-branco.webp";
         }
     }
 
@@ -66,42 +71,21 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-    const projectCard = document.querySelector('.projetos-carousel');
-    if (!projectCard) return;
+    // ==========================================
+    // 3. LÓGICA DO MENU ATIVO (Navegação)
+    // ==========================================
+    const linksMenu = document.querySelectorAll(".nav_bar a");
+    const urlAtual = window.location.href; // Pega a URL completa da página atual
 
-    const track = projectCard.querySelector('#projects-track');
-    const projectSlides = projectCard.querySelectorAll('.project-slide');
-    const prevBtn = projectCard.querySelector('.seta.anterior');
-    const nextBtn = projectCard.querySelector('.seta.proximo');
-    const dotsContainer = projectCard.querySelector('#project-dots');
-    let current = 0;
+    linksMenu.forEach(link => {
+        const hrefDoLink = link.getAttribute("href");
 
-    function goTo(index) {
-        projectSlides.forEach(s => s.classList.remove('ativo'));
-        if (index >= projectSlides.length) index = 0;
-        if (index < 0) index = projectSlides.length - 1;
-        current = index;
-        projectSlides[current].classList.add('ativo');
-        updateDots();
-    }
+        // Verifica se a URL atual contém o nome do arquivo do link
+        // Também garante que a página inicial acenda quando a URL estiver apenas na raiz "/"
+        if (urlAtual.includes(hrefDoLink) || (urlAtual.endsWith("/") && hrefDoLink === "index.html")) {
+            link.classList.add("nav-ativo");
+        }
+    });
 
-    function updateDots() {
-        if (!dotsContainer) return;
-        dotsContainer.innerHTML = '';
-        projectSlides.forEach((_, i) => {
-            const b = document.createElement('button');
-            b.className = (i === current) ? 'dot ativo' : 'dot';
-            b.setAttribute('aria-label', 'Ir para o projeto ' + (i + 1));
-            b.addEventListener('click', () => goTo(i));
-            dotsContainer.appendChild(b);
-        });
-    }
-
-    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
-    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
-
-    goTo(0);
-});
+}); // <-- Fechamento principal do DOMContentLoaded
