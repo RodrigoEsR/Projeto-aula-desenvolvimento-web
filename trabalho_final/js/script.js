@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function atualizarLogoGithub(isLight) {
         if (!logoGithub) return;
         if (isLight) {
-            logoGithub.src = "images/logo-github-preto.webp"; 
+            logoGithub.src = "images/logo-github-preto.png"; 
         } else {
             logoGithub.src = "images/logo-github-branco.webp";
         }
