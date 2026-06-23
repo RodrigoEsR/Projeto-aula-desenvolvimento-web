@@ -1,5 +1,25 @@
 
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    order: 1;
+}
+
+header .nav_bar {
+    order: 2;
+    width: 100%;
+}
+
+header #botao-tema {
+    order: 3;
+    margin-top: 10px;
+}
+
 .project-image {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -10,6 +30,7 @@
 }
 
 .project-links {
+    font-size: 25px;
     display: flex;
     gap: 12px;
     margin-top: 8px;
@@ -60,6 +81,7 @@
 }
 
 .github {
+    font-size: 25px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -71,6 +93,9 @@
     object-fit: contain;
 }
 
+h4 {
+    font-size: 35px;
+}
 
 @media (max-width: 600px) {
     .project-image {

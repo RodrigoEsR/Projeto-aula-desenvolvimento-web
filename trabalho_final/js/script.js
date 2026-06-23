@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (slides.length > 0) { mostrarSlide(slideAtual); iniciarAutoplay(); }
 
     // ==========================================
-    // 2. LÓGICA MODULAR DE TROCA DE TEMA + LOGO GITHUB
+    // 2. LÓGICA TROCA DE TEMA + LOGO GITHUB
     // ==========================================
     const botaoTema = document.getElementById("botao-tema");
     const textoBotao = document.getElementById("texto-botao");
