@@ -111,8 +111,7 @@ h4 {
         width: 100%;
     }
 
-    .project-links a,
-    .github {
+    .project-links a {
         width: 100%;
         max-width: 320px;
         text-align: center;
