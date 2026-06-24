@@ -102,3 +102,19 @@ h4 {
         aspect-ratio: 4 / 3;
     }
 }
+
+@media (max-width: 459px) {
+    .project-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .project-links a,
+    .github {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+}

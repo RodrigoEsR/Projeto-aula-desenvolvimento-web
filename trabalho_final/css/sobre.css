@@ -38,7 +38,11 @@ main {
 
 .card p {
     width: 100%;
-    text-align:justify
+    text-align:justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    letter-spacing: -0.01em;
 }
 
 @media (min-width: 900px) {
