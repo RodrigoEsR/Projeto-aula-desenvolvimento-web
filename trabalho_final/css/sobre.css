@@ -32,6 +32,15 @@ main {
     color: var(--destaque);
 }
 
+.card {
+    align-items: center;
+}
+
+.card p {
+    width: 100%;
+    text-align:justify
+}
+
 @media (min-width: 900px) {
 	main {
 		flex-direction: column;
@@ -39,5 +48,8 @@ main {
 		justify-content: center;
 		gap: 24px;
 	}
-	.card { width: calc(50% - 24px); }
+	.card { 
+        width: calc(50% - 24px);
+        padding: 60px;
+    }
 }
